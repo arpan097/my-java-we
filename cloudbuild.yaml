@@ -4,6 +4,6 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/vocal-exchanger-320604/vocal-exchanger-320604:$SHORT_SHA']
   - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['beta', 'run', 'deploy', 'myjavawebservice', '--region=global', '--platform=managed', '--image=vocal-exchanger-320604:$SHORT_SHA']
+  args: ['run', 'deploy', 'myjavawebservice', '--region=us-central1', '--platform=managed', '--image=vocal-exchanger-320604:$SHORT_SHA']
   
   //ghjh//
